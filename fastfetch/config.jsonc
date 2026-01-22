@@ -79,6 +79,10 @@
         },
         "break",
         {
+            "type": "custom",
+            "format": "\u001b[90m┌────────────────────────Other───────────────────────┐"
+        },
+        {
             "type": "de",
             "key": " DE",
             "keyColor": "blue"
