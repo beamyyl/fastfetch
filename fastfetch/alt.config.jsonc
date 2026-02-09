@@ -7,109 +7,126 @@
             "left": 2
         }
     },
+    "display": {
+        "separator": ": ",
+        "bar": {
+            "char": {
+                "elapsed": "■",
+                "remaining": " "
+            },
+            "width": 18,
+            "color": {
+                "elapsed": "white"
+            }
+        },
+        "percent": {
+            "type": 2
+        }
+    },
     "modules": [
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+            "format": "\u001b[38;5;66m┌──────────────────────Hardware──────────────────────┐"
         },
         {
             "type": "host",
             "key": " PC",
-            "keyColor": "green"
+            "keyColor": "36"
         },
         {
             "type": "cpu",
             "key": "│ ├",
-            "keyColor": "green"
+            "keyColor": "36"
         },
         {
             "type": "gpu",
             "key": "│ ├󰍛",
-            "keyColor": "green"
+            "keyColor": "36"
         },
         {
             "type": "disk",
             "key": "│ ├",
-            "keyColor": "green"
+            "keyColor": "36",
+            "folders": "/"
         },
         {
             "type": "memory",
             "key": "│ └󰍛",
-            "keyColor": "green"
+            "keyColor": "36"
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+            "format": "\u001b[38;5;66m└────────────────────────────────────────────────────┘"
         },
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
+            "format": "\u001b[38;5;66m┌──────────────────────Software──────────────────────┐"
         },
         {
             "type": "os",
             "key": "│ ├",
-            "keyColor": "yellow"
+            "keyColor": "35"
         },
         {
             "type": "kernel",
             "key": "│ ├",
-            "keyColor": "yellow"
+            "keyColor": "35"
         },
         {
             "type": "packages",
             "key": "│ ├󰏖",
-            "keyColor": "yellow"
+            "keyColor": "35"
         },
         {
             "type": "shell",
             "key": "│ └",
-            "keyColor": "yellow"
+            "keyColor": "35"
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+            "format": "\u001b[38;5;66m└────────────────────────────────────────────────────┘"
         },
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌────────────────────────Other───────────────────────┐"
+            "format": "\u001b[38;5;66m┌────────────────────────Other───────────────────────┐"
         },
         {
             "type": "de",
             "key": " DE",
-            "keyColor": "blue"
+            "keyColor": "34"
         },
         {
-            "type": "lm",
-            "key": "│ ├",
-            "keyColor": "blue"
+            "type": "uptime",
+            "key": "│ ├󰅐",
+            "keyColor": "34"
         },
         {
             "type": "wm",
             "key": "│ ├",
-            "keyColor": "blue"
+            "keyColor": "34"
         },
         {
             "type": "wmtheme",
             "key": "│ ├󰉼",
-            "keyColor": "blue"
+            "keyColor": "34"
         },
         {
             "type": "command",
             "key": "│ ├󰌽",
-            "keyColor": "blue",
-	    "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+            "keyColor": "34",
+            "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
         },
         {
             "type": "terminal",
-            "key":  "│ └",
-            "keyColor": "blue"
+            "key": "│ └",
+            "keyColor": "34"
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+            "format": "\u001b[38;5;66m└────────────────────────────────────────────────────┘"
         },
         "break",
         {
@@ -119,4 +136,3 @@
         }
     ]
 }
-
