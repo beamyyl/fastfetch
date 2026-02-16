@@ -68,13 +68,13 @@
         "break",
 
         {
-            "type": "de",
-            "key": "╭─",
+            "type": "uptime",
+            "key": "╭─󰅐",
             "keyColor": "34"
         },
         {
-            "type": "uptime",
-            "key": "├─󰅐",
+            "type": "de",
+            "key": "├─",
             "keyColor": "34"
         },
         {
