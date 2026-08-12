@@ -1,15 +1,11 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "builtin",
-        "source": "arch_small",
-        "padding": {
-            "top": 2,
-            "left": 2
-        }
+      "type": "file",
+      "source": "~/.config/fastfetch/logo.txt"
     },
     "display": {
-        "separator": ": ",
+        "separator": " ",
         "bar": {
             "char": {
                 "elapsed": "■",
@@ -25,109 +21,92 @@
         }
     },
     "modules": [
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[38;5;66m┌──────────────────────Hardware──────────────────────┐"
-        },
         {
             "type": "host",
-            "key": " PC",
+            "key": "╭─",
             "keyColor": "36"
         },
         {
             "type": "cpu",
-            "key": "│ ├",
+            "key": "├─",
             "keyColor": "36"
         },
         {
             "type": "gpu",
-            "key": "│ ├󰍛",
+            "key": "├─󰍛",
             "keyColor": "36"
         },
         {
             "type": "disk",
-            "key": "│ ├",
+            "key": "├─",
             "keyColor": "36",
             "folders": "/"
         },
         {
             "type": "memory",
-            "key": "│ └󰍛",
+            "key": "╰─󰍛",
             "keyColor": "36"
         },
-        {
-            "type": "custom",
-            "format": "\u001b[38;5;66m└────────────────────────────────────────────────────┘"
-        },
         "break",
-        {
-            "type": "custom",
-            "format": "\u001b[38;5;66m┌──────────────────────Software──────────────────────┐"
-        },
+
         {
             "type": "os",
-            "key": "│ ├",
+            "key": "╭─",
             "keyColor": "35"
         },
         {
             "type": "kernel",
-            "key": "│ ├",
+            "key": "├─",
             "keyColor": "35"
         },
         {
             "type": "packages",
-            "key": "│ ├󰏖",
+            "key": "├─󰏖",
             "keyColor": "35"
+        },
+        {
+            "type": "initsystem",
+            "key": "├─",
+            "keyColor": "35",
+//            "format": "openrc 0.63.3" 
         },
         {
             "type": "shell",
-            "key": "│ └",
+            "key": "╰─",
             "keyColor": "35"
         },
-        {
-            "type": "custom",
-            "format": "\u001b[38;5;66m└────────────────────────────────────────────────────┘"
-        },
         "break",
+
         {
-            "type": "custom",
-            "format": "\u001b[38;5;66m┌────────────────────────Other───────────────────────┐"
-        },
-        {
-            "type": "de",
-            "key": " DE",
+            "type": "uptime",
+            "key": "╭─󰅐",
             "keyColor": "34"
         },
         {
-            "type": "uptime",
-            "key": "│ ├󰅐",
+            "type": "de",
+            "key": "├─",
             "keyColor": "34"
         },
         {
             "type": "wm",
-            "key": "│ ├",
+            "key": "├─",
             "keyColor": "34"
         },
         {
             "type": "wmtheme",
-            "key": "│ ├󰉼",
+            "key": "├─󰉼",
             "keyColor": "34"
         },
         {
             "type": "command",
-            "key": "│ ├󰌽",
+            "key": "├─󰌽",
             "keyColor": "34",
             "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
         },
         {
             "type": "terminal",
-            "key": "│ └",
+            "key": "╰─",
             "keyColor": "34"
-        },
-        {
-            "type": "custom",
-            "format": "\u001b[38;5;66m└────────────────────────────────────────────────────┘"
         },
         "break",
         {
